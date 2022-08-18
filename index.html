@@ -40,10 +40,10 @@
   <!-- Header with full-height image -->
   <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
     <div class="w3-display-left w3-text-white" style="padding:48px">
-      <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-      <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-      <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
-      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+      <span class="w3-jumbo w3-hide-small">CHECK THIS OUT</span><br>
+      <!-- <span class="w3-xxlarge w3-hide-large w3-hide-medium"></span><br> -->
+      <span class="w3-large">We find random stuff all the time</span>
+      <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Check Out The Page</a></p>
     </div> 
     <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
       <i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -56,7 +56,8 @@
   </header>
   
   <!-- About Section -->
-  <div class="w3-container" style="padding:128px 16px" id="about">
+
+  <!-- <div class="w3-container" style="padding:128px 16px" id="about">
     <h3 class="w3-center">ABOUT THE COMPANY</h3>
     <p class="w3-center w3-large">Key features of our company</p>
     <div class="w3-row-padding w3-center" style="margin-top:64px">
@@ -69,7 +70,8 @@
         <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
         <p class="w3-large">Passion</p>
         <p>We alwase love finding and testing randome products all over the place </p>
-      </div>
+      </div> -->
+
       <!-- <div class="w3-quarter">
         <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
         <p class="w3-large">Design</p>
@@ -80,8 +82,7 @@
         <p class="w3-large">Support</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
       </div> -->
-    </div>
-  </div>
+    
   
   <!-- Promo Section - "We know design" -->
   <!-- <div class="w3-container w3-light-grey" style="padding:128px 16px">
@@ -100,7 +101,7 @@
   <!-- Team Section -->
   <div class="w3-container" style="padding:128px 16px" id="team">
     <h3 class="w3-center">THE TEAM</h3>
-    <p class="w3-center w3-large">The ones who runs this company</p>
+    <p class="w3-center w3-large">The ones who runs this Crazy company</p>
     <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-card">
@@ -116,12 +117,12 @@
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-card">
           <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-          <div class="w3-container">
+          <!-- <div class="w3-container">
             <h3>Anja Doe</h3>
             <p class="w3-opacity">Art Director</p>
             <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
             <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="w3-col l3 m6 w3-margin-bottom">
@@ -138,12 +139,12 @@
       <div class="w3-col l3 m6 w3-margin-bottom">
         <div class="w3-card">
           <img src="/w3images/team4.jpg" alt="Dan" style="width:100%">
-          <div class="w3-container">
+          <!-- <div class="w3-container">
             <h3>Dan Star</h3>
             <p class="w3-opacity">Designer</p>
             <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
             <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -158,38 +159,83 @@
   
   <!-- Work Section -->
   <div class="w3-container" style="padding:128px 16px" id="work">
-    <h3 class="w3-center">Check Out What We Found</h3>
-    <!-- <p class="w3-center w3-large">What we've done for people</p> -->
-  
-    <div class="w3-row-padding" style="margin-top:64px">
-      <div class="w3-col l3 m6">
-        <img src="/w3images/tech_mic.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
-      </div>
-      <div class="w3-col l3 m6">
-        <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
-      </div>
-      <div class="w3-col l3 m6">
-        <img src="/w3images/tech_drone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
-      </div>
-      <div class="w3-col l3 m6">
-        <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
-      </div>
+    <h2>Check Out What I Found</h2>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+  <button class="btn" onclick="filterSelection('people')"> People</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column nature">
+    <div class="content">
+      <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+      <h4>Mountains</h4>
+      <p>Lorem ipsum dolor..</p>
     </div>
-  
-    <div class="w3-row-padding w3-section">
-      <div class="w3-col l3 m6">
-        <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
-      </div>
-      <div class="w3-col l3 m6">
-        <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
-      </div>
-      <div class="w3-col l3 m6">
-        <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
-      </div>
-      <div class="w3-col l3 m6">
-        <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
-      </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+      <h4>Lights</h4>
+      <p>Lorem ipsum dolor..</p>
     </div>
+  </div>
+  <div class="column nature">
+    <div class="content">
+      <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+      <h4>Forest</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+      <h4>Retro</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+      <h4>Fast</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column cars">
+    <div class="content">
+      <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+      <h4>Classic</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+      <h4>Girl</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+      <h4>Man</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+  <div class="column people">
+    <div class="content">
+      <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
   </div>
   
   <!-- Modal for full size images on click-->
@@ -209,6 +255,8 @@
 <div class="elfsight-app-045e42bd-e422-4bd1-84b2-99e64a16f215"></div>
 <script src="https://apps.elfsight.com/p/platform.js" defer></script>
 <div class="elfsight-app-21475402-85e3-43d6-b9d9-7bcf126f368c"></div>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-699fb901-26c7-4ace-8095-87fe3c34d4af"></div>
   </div>
   <!-- Footer -->
   <footer class="w3-center w3-black w3-padding-64">
@@ -221,7 +269,7 @@
       <i class="fa fa-twitter w3-hover-opacity"></i>
       <i class="fa fa-linkedin w3-hover-opacity"></i>
     </div>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+    <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
   </footer>
    <script src="app.js"></script>
 </body>
