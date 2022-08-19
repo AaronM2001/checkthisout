@@ -1,24 +1,32 @@
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Raleway", sans-serif;
+  color: black;
+  
+} 
 
 body, html {
   height: 100%;
   line-height: 1.8;
+  color: black;
 }
 
 /* Full height image header */
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("/w3images/mac.jpg");
+  background-image: url("/images/cto-logo.jpg");
   min-height: 100%;
 }
 
 .w3-bar .w3-button {
   padding: 16px;
+  color: black;
+  
 }
 
   * {
     box-sizing: border-box;
+    color: black;
   }
   
   body {
@@ -85,10 +93,11 @@ body, html {
   /* Add a grey background color on mouse-over */
   .btn:hover {
     background-color: #ddd;
+    color: black;
   }
   
   /* Add a dark background color to the active button */
   .btn.active {
     background-color: #666;
-     color: white;
+     color:black;
   }
